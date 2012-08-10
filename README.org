@@ -1,0 +1,3 @@
+* graphics-experiments-in-c
+  + A repository to hold the code from my digressions into graphics related coding. 
+

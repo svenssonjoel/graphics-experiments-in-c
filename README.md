@@ -1,2 +1,0 @@
-graphics-experiments-in-c
-=========================
