@@ -7,15 +7,16 @@ CFLAGS = -Wall
 SRCS=$(wildcard *.c)
 OBJS=$(SRCS:.c=.o)
 
+## $(LIBS)
 %.o:%.c
-	$(C99) -c -o $@ $^ $(CFLAGS) $(LIBS)
+	$(C99) -c -o $@ $^ $(CFLAGS) 
 
 
 all: graphlib.o
 
 
 graphlib.o: $(OBJS)
-	ld -r -o graphlib.o $(OBJS)
+	ld -r $(OBJS) -o graphlib.o
 
 clean: 
 	rm *.o
