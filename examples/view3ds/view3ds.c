@@ -339,9 +339,6 @@ void setShaders() {
   shaderShadow.attributes[VERTEX_INDEX].vattrib = shader_vindex;
   shaderShadow.attributes[VERTEX_INDEX].active = true;
   
-
-    
-
  
 } 
 

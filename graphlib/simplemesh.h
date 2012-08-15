@@ -19,6 +19,12 @@
    Whats a mesh, 
     A bunch of triangles that in some way "belong" together.
       
+    
+   INFO: 
+     + primed functions are "new". Phase out old stuff then start renaming 
+       _prime functions.
+     
+    
 */
 
 
