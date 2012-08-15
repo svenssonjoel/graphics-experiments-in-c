@@ -33,13 +33,16 @@
    -------------------------------------------------------------------------- */
 typedef struct{ 
   
+  /* Host side storage of vertex attributes */ 
   Vector3f *vertices;        
   Vector3f *normals;
   Vector3f *colors;
   Vector2f *texels;
   unsigned int num_vertices;
 
-  // TODO: learn about vaos, what are they and why and so on.
+  /* Device side storage of vertex attributes */ 
+  // all the "buffers" needs to belong to a vao 
+  // The vao can then be rendered with a single command.
   GLuint vao;  // Vertex Array Object
   GLuint vertex_buffer; 
   GLuint normal_buffer;
@@ -47,12 +50,7 @@ typedef struct{
   GLuint texel_buffer;
   GLuint index_buffer;
   
-  // Removing texture_id and textured
-  // from mesh. If a mesh has texels you can render 
-  // it with any suitable texture.
-  //GLuint  texture_id;
-  //bool   textured;
-
+  // TODO: Move these up ? 
   unsigned char *indices; //the values here can be of type 
                           //different from "unsigned char"
   unsigned int num_indices;
