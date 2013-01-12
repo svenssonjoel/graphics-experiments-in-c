@@ -1,6 +1,6 @@
 C99 = gcc -std=c99 
 
-LIBS = -lglut -lGLEW -lGLU -l3ds -lpng -lm
+LIBS = -lGL -lGLU -lGLEW -lglut -l3ds -lpng -lm
 CFLAGS = -Wall
 
 INC = -I../../
